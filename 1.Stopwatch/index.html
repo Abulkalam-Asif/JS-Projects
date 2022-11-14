@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    *, *::before, *::after {
+      box-sizing: border-box;
+    }
+    body {
+      margin: 0;
+      padding: 0;
+      background: #0054c1;
+      color: #fff;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    main {
+      margin: auto;
+      width: fit-content;
+      padding: 1.5rem;
+    }
+    h1, #timer {
+      text-align: center;
+    }
+    #ctrlBtnsDiv {
+      display: flex;
+      gap: 1rem;
+      margin: 2rem 0;
+    }
+    .ctrl_btns {
+      background: transparent;
+      color: #fff;
+      width: 100%;
+      border: 1px solid #eee;
+      border-radius: .5rem;
+      padding: 1rem 2rem;
+      font-size: 1.2rem;
+    }
+    .ctrl_btns:hover {
+      background: #ea9800;
+    }
+  </style>
+  
+</head>
+<body>
+  <main>
+    <h1>Stopwatch</h1>
+    <h1>Vanilla Javascript Stopwatch</h1>
+    <div id="stopwatch">
+      <h2 id="timer">
+        <span id="mins">00</span>:<span id="secs">00</span>
+      </h2>
+      <div id="ctrlBtnsDiv">
+        <button class="ctrl_btns" id="startBtn" onclick="startFunc()">Start</button>
+        <button class="ctrl_btns" id="stopBtn" onclick="stopFunc()">Stop</button>
+        <button class="ctrl_btns" id="resetBtn" onclick="resetFunc()">Reset</button>
+      </div>
+    </div>
+  </main>
+
+  <script src="./app.js"></script>
+  
+</body>
+</html>
